@@ -6,7 +6,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import PinterestIcon from '@mui/icons-material/Pinterest';
 
 const Footer = () => {
     return ( 
@@ -38,13 +37,13 @@ const Footer = () => {
                         </div>
                         <ul className="footer__contacts">
                             <li className="footer__contact">
-                                <LocalPhoneIcon /> <span>+123 4567 890</span>
+                                <LocalPhoneIcon /> <span>+91 8754036559</span>
                             </li>
                             <li className="footer__contact">
-                                <EmailIcon /> <span>shop@shema.com</span>
+                                <EmailIcon /> <span>sktextiles@gmail.com</span>
                             </li>
                             <li className="footer__contact">
-                                <LocationOnIcon /> <span>Addis Ababa, Ethiopia</span>
+                                <LocationOnIcon /> <span>Veruppan Chathran ,Erode</span>
                             </li>
                         </ul>
                     </div>
@@ -65,15 +64,12 @@ const Footer = () => {
                             <li className="social__link">
                                 <TelegramIcon />
                             </li>
-                            <li className="social__link">
-                                <PinterestIcon />
-                            </li>
                         </ul>
                     </div>
                 </div>
                 <div className="fotter__copyright__container">
                     <ul className='nav'>
-                        <li className="footer__copyright">©2022 Shema Ltd. |</li>
+                        <li className="footer__copyright">©2021 SK Ltd. |</li>
                         <li className="footer__terms__condition"> | Terms & Condition |</li>
                         <li className="footer__privacy__policy">| Privacy Policy</li>
                     </ul>

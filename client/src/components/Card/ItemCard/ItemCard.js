@@ -27,7 +27,6 @@ const ItemCard = (props) => {
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 > 
-                    {isHovered? <img src={`https://shema-backend.vercel.app/public/${props.item.category}/${props.item.image[1].filename}`} alt="item" className="product__img"/>: <img src= {`https://shema-backend.vercel.app/public/${props.item.category}/${props.item.image[0].filename}`} alt="item" className="product__img"/> }
                 </div>
                 <div className="product__card__detail">
                     <div className="product__name">
@@ -39,13 +38,13 @@ const ItemCard = (props) => {
                         <span>{props.item.description}</span>
                     </div>
                     <div className="product__price">
-                        <span>${props.item.price}</span>
+                        <span>₹ {props.item.price}</span>
                     </div>
                     <div className="product__card__action">
-                        <IconButton onClick={handleAddToWishList} sx={ {borderRadius: '20px', width: '40px', height: '40px', /* borderWidth: '3px', borderStyle: 'solid', borderColor: '#FFE26E' */ }  }>
+                        <IconButton onClick={handleAddToWishList} sx={ {borderRadius: '20px', width: '40px', height: '40px',  borderWidth: '3px', borderStyle: 'solid', borderColor: '#FFE26E'  }  }>
                             <FavoriteBorderIcon sx={{width: '22px', height: '22px', color: 'black'}}/>
                         </IconButton>
-                        <IconButton onClick={handleAddToCart} sx={ {borderRadius: '20px', width: '40px', height: '40px' /*  borderWidth: '3px', borderStyle: 'solid', borderColor: '#FFE26E' */}}>
+                        <IconButton onClick={handleAddToCart} sx={ {borderRadius: '20px', width: '40px', height: '40px' , borderWidth: '3px', borderStyle: 'solid', borderColor: '#FFE26E' }}>
                             <AddShoppingCartIcon sx={{width: '22px', height: '22px', color: 'black'}}/>
                         </IconButton >
                     </div>

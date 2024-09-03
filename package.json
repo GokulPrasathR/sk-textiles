@@ -1,9 +1,12 @@
 {
-  "name": "shema",
+  "name": "sk",
   "version": "1.0.0",
-  "description": "Shema MERN Stack Ecommerce application",
+  "description": "Sk textiles",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js", 
+    "client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Bereky/shema-mern-ecommerce/issues"
   },
-  "homepage": "https://github.com/Bereky/shema-mern-ecommerce#readme"
+  "homepage": "https://github.com/Bereky/shema-mern-ecommerce#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }

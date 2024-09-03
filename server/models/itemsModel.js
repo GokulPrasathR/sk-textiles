@@ -2,7 +2,7 @@
 
 const mongoose = require("mongoose")
 
-const itemSchema = mongoose.Schema(
+const itemSchema = mongoose.Sk(
     {
         name: {
             type: String,
